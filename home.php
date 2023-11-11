@@ -2,47 +2,90 @@
 echo '<div class="img_header"><img src="' . esc_url('http://localhost/projetS3/wp-content/uploads/2023/11/E-Sport_Home-scaled.webp') . '" alt="Logo Shooting Star"></div>' ;?>
 
 
-<h1>
-VOTRE NOUVELLE </br> ÉQUIPE FAVORITE ICI </br> MÊME À L’UNIVERSITÉ</br> DE FRANCHE-COMTÉ
-</h1>
+<h1>Votre nouvelle équipe favorite</br> ici même à </br>l'université de franche-comté</h1>
+
 
 <hr class="line-left" />
 <hr class="line-right" />
+
+<section>
 <div class="keyboard_text">
-    <div>
-<p style="text-align: right; margin-bottom:-50px; margin-right: 100px;">Montrer votre talent</p>
-<?php echo '<div class="keyboard"><img src="' . esc_url('http://localhost/projetS3/wp-content/uploads/2023/11/Keyboard.webp') . '" alt="Clavier violet"></div>' ;?>
 
-   <p>Partciciper Tenter Gagner</p> 
-   <p>Rejoignez l’un des nombreux tournois organisés par notre association et prouver votre force</p>
-   <a href="#">L'arène</a>
+    <?php echo '<img src="' . esc_url('http://localhost/projetS3/wp-content/uploads/2023/11/Keyboard.webp') . '" alt="Clavier violet" class="keyboard_img">' ;?>
+
+    <div class="keyboard_text_title">
+        <p class="keyboard_text_title_left">Partciciper Tenter Gagner</p>
+        <p>Rejoignez l’un des nombreux tournois organisés par notre association et prouver votre force</p>
+        <a href="#">L'arène</a>
     </div>
-</div>
 
+     <p class="keyboard_text_title_right">Montrer votre talent</p>
+
+</div>
+</section>
 
 <hr class="line-left" />
 <hr class="line-right" />
 
+<!--<section>
+<?php echo '<div class="img_header"><img src="' . esc_url('http://localhost/projetS3/wp-content/uploads/2023/11/E-Sport_Home-scaled.webp') . '" alt="Logo Shooting Star"></div>' ;?>
 
+<h2>Unified champion une association universitaire</h2>
+
+</section> -->
 
 <?php get_footer() ;?>
 
 
 <style>
-.keyboard_text p {
+
+.keyboard_text_title_left, .keyboard_text_title_right {
 	font-family: Josefin Sans;
 	color: white;
-	margin: 80px 0 150px 0;
-    font-size: 50px ;
-    z-index: 50;
+	font-size: 60px;
+    margin-right: 70%;
+    text-transform: uppercase;
+    line-height: 100%;
+    font-weight: bold;
+
 }
 
+.keyboard_text {
+    position: relative;
+    color: white;
+}
+
+.keyboard_text_title {
+    position: absolute;
+    top: 55%;
+    left: 14%;
+    filter: drop-shadow(0 0 50px  #4361EE);
+}
+
+.keyboard_text_title p {
+    margin-right: 69%;
+}
+
+.keyboard_text_title_right {
+    position: absolute;
+    top:-10%;
+    left: 60%;
+    filter: drop-shadow(0 0 50px #7209B7);
+}
 
 .keyboard {
     margin: auto;
     max-width: 20%;
     filter: drop-shadow(0 0 300px  #7209B7);
     z-index: -1;
+}
+
+.keyboard_img {
+    max-width:420px;
+    height: 100%;
+    margin-inline: auto;
+    display: flex;
+    margin-bottom: 200px;
 }
 
 .line-left, .line-right {
