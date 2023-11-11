@@ -24,7 +24,7 @@ h1 {
 	font-family: Josefin Sans;
 	color: white;
 	text-align: center;
-	margin-bottom: 200px;
+	margin: 80px 0 150px 0;
 }
 
 body {
@@ -44,19 +44,21 @@ li {
 	list-style-type: none !important;
 }
 
-.menu-header-principal-container ul li:before {
-	background-color: none!important;
+ul li:before {
+	display: none;
 }
 
 
 /* Home.php */
 
 .img_header {
-	width: 100%;
+	min-width: 100%;
 	position: absolute;
-	margin-top: -200px;
+	margin-top: -300px;
 	z-index: -1;
 	filter: brightness(50%);
+	background: linear-gradient(#101010 0%, rgba(16, 16, 16, 0.80) 27.68%, rgba(16, 16, 16, 0.50) 54.98%, rgba(16, 16, 16, 0.10) 80.76%, rgba(16, 16, 16, 0.00) 100%);
+	background: linear-gradient(180deg, #101010 0%, rgba(16, 16, 16, 0.80) 27.68%, rgba(16, 16, 16, 0.50) 54.98%, rgba(16, 16, 16, 0.10) 80.76%, rgba(16, 16, 16, 0.00) 100%);
 }
 
 /* Header.php */
@@ -102,7 +104,7 @@ footer {
 	margin: auto;
 }
 
-hr {
+.footer-line {
 	border: 3px solid white;
 	color: white;
 	overflow: visible;
