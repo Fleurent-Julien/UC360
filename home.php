@@ -33,10 +33,35 @@ echo '<div class="img_header"><img src="' . esc_url('http://localhost/projetS3/w
 <a href="https://www.twitch.tv/unifiedchampions" class="button-home">Rejoindre</a>
 </section>
 
+<section>
+    <div>
+<h2>Les jeux présents dans l'arène</h2>
+
+    <div class="cards">
+<?php echo '<div class="cards_img"><img src="' . esc_url('http://localhost/projetS3/wp-content/uploads/2023/11/Rocket_League_Card.webp') . '" alt="Card Rocket League"></div>' ;?>
+<?php echo '<div class="cards_img"><img src="' . esc_url('http://localhost/projetS3/wp-content/uploads/2023/11/Valorant_card.webp') . '" alt="Card League Of Legends"></div>' ;?>
+<?php echo '<div class="cards_img"><img src="' . esc_url('http://localhost/projetS3/wp-content/uploads/2023/11/LoL_Card.webp') . '" alt="Card Valorant"></div>' ;?>
+    </div>
+</div>
+</section>
+
+
+
 <?php get_footer() ;?>
 
 
 <style>
+
+
+.cards {
+    display: flex;
+    max-width: 50%;
+    justify-content: space-between;
+}
+
+.cards_img {
+    justify-content: space-between;
+}
 
 .stream {
     text-decoration: underline;
@@ -62,10 +87,6 @@ echo '<div class="img_header"><img src="' . esc_url('http://localhost/projetS3/w
 	font-weight: 700;
 	text-transform: uppercase;
 }
-
-
-
-
 
 .keyboard_text_title_left, .keyboard_text_title_right {
 	font-family: Josefin Sans;
