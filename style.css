@@ -20,12 +20,17 @@
 
 /* Générale */
 
-h1 {
+h1, h2 {
 	font-family: Josefin Sans;
 	color: white;
 	text-align: center;
-	margin: 80px 0 150px 0;
 	text-transform: uppercase;
+	margin-top:100px;
+	margin-left: 20%;
+	margin-right: 20%;
+	margin-bottom: 100px;
+	font-size: 60px;
+	line-height: 100%;
 }
 
 body {
@@ -57,7 +62,8 @@ img {
 /* Home.php */
 
 .img_header {
-	min-width: 100%;
+	max-width: 100%;
+	max-height: 50%;
 	position: absolute;
 	margin-top: -300px;
 	z-index: -1;
@@ -151,7 +157,7 @@ footer {
 	transform: translate(-50%, -50%);
 }
 
-.button404 {
+.button-uc {
 	font-size: 20px;
 	text-decoration: none;
 	color: white;

@@ -1,12 +1,6 @@
 <?php get_header();
 echo '<div class="img_header"><img src="' . esc_url('http://localhost/projetS3/wp-content/uploads/2023/11/E-Sport_Home-scaled.webp') . '" alt="Logo Shooting Star"></div>' ;?>
-
-
-<h1>Votre nouvelle équipe favorite</br> ici même à </br>l'université de franche-comté</h1>
-
-
-<hr class="line-left" />
-<hr class="line-right" />
+<h1>Votre nouvelle équipe favorite ici même à l'université de franche-comté</h1>
 
 <section>
 <div class="keyboard_text">
@@ -24,20 +18,54 @@ echo '<div class="img_header"><img src="' . esc_url('http://localhost/projetS3/w
 </div>
 </section>
 
-<hr class="line-left" />
-<hr class="line-right" />
 
-<!--<section>
-<?php echo '<div class="img_header"><img src="' . esc_url('http://localhost/projetS3/wp-content/uploads/2023/11/E-Sport_Home-scaled.webp') . '" alt="Logo Shooting Star"></div>' ;?>
 
+<section>
+<?php echo '<div class="img_section"><img src="' . esc_url('http://localhost/projetS3/wp-content/uploads/2023/11/img_ufc-scaled.webp') . '" alt="Logo Shooting Star"></div>' ;?>
 <h2>Unified champion une association universitaire</h2>
+<a href="/a-propos" class="button-home">À propos</a>
+</section>
 
-</section> -->
+<section>
+<?php echo '<div class="img_section_2"><img src="' . esc_url('http://localhost/projetS3/wp-content/uploads/2023/11/stream_img-scaled.webp') . '" alt="Logo Shooting Star"></div>' ;?>
+<h2>Stream</h2>
+<p class="stream">Vous pouvez retrouver en direct l’association Unified Champions sur Twitch.</p>
+<a href="https://www.twitch.tv/unifiedchampions" class="button-home">Rejoindre</a>
+</section>
 
 <?php get_footer() ;?>
 
 
 <style>
+
+.stream {
+    text-decoration: underline;
+    color:white;
+    text-align: center;
+    margin-top:-100px;
+    margin-bottom: 100px;
+}
+
+.button-home {
+    display: block;
+    width: 200px;
+    margin-left:auto;
+    margin-right:auto;
+    text-align: center;
+    background: linear-gradient(97deg, #8F00FF 9.79%, #FFF 236.98%);
+    padding: 10px; 
+    margin-bottom: 200px;
+    border-radius: 10px;
+    font-family: Josefin Sans;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+
+
+
 
 .keyboard_text_title_left, .keyboard_text_title_right {
 	font-family: Josefin Sans;
@@ -85,7 +113,8 @@ echo '<div class="img_header"><img src="' . esc_url('http://localhost/projetS3/w
     height: 100%;
     margin-inline: auto;
     display: flex;
-    margin-bottom: 200px;
+    margin-top: 200px;
+    margin-bottom: 400px;
 }
 
 .line-left, .line-right {
@@ -107,7 +136,27 @@ echo '<div class="img_header"><img src="' . esc_url('http://localhost/projetS3/w
 	filter: drop-shadow(0px 0px 10px #7209B7);
     margin-left: 50%;
     border-radius: 50px 0 0 50px;
-    margin-bottom: 150px
+    margin-bottom: 150px;
 }
 
+.img_section {
+	min-width: 100%;
+	position: absolute;
+	margin-bottom: 500px;
+    margin-top: -200px;
+	z-index: -1;
+	filter: brightness(50%);
+	background: linear-gradient(#101010 0%, rgba(16, 16, 16, 0.80) 27.68%, rgba(16, 16, 16, 0.50) 54.98%, rgba(16, 16, 16, 0.10) 80.76%, rgba(16, 16, 16, 0.00) 100%);
+	background: linear-gradient(180deg, #101010 0%, rgba(16, 16, 16, 0.80) 27.68%, rgba(16, 16, 16, 0.50) 54.98%, rgba(16, 16, 16, 0.10) 80.76%, rgba(16, 16, 16, 0.00) 100%);
+}
+
+.img_section_2 {
+	min-width: 100%;
+	position: absolute;
+    margin-top: -100px;
+	z-index: -1;
+	filter: brightness(50%);
+	background: linear-gradient(#101010 0%, rgba(16, 16, 16, 0.80) 27.68%, rgba(16, 16, 16, 0.50) 54.98%, rgba(16, 16, 16, 0.10) 80.76%, rgba(16, 16, 16, 0.00) 100%);
+	background: linear-gradient(180deg, #101010 0%, rgba(16, 16, 16, 0.80) 27.68%, rgba(16, 16, 16, 0.50) 54.98%, rgba(16, 16, 16, 0.10) 80.76%, rgba(16, 16, 16, 0.00) 100%);
+}
 </style>
