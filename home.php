@@ -38,9 +38,8 @@ echo '<div class="img_header"><img src="' . esc_url('http://localhost/projetS3/w
 <h2>Les jeux présents dans l'arène</h2>
 
     <div class="cards">
-<?php echo '<div class="cards_img"><img src="' . esc_url('http://localhost/projetS3/wp-content/uploads/2023/11/Rocket_League_Card.webp') . '" alt="Card Rocket League"></div>' ;?>
-<?php echo '<div class="cards_img"><img src="' . esc_url('http://localhost/projetS3/wp-content/uploads/2023/11/Valorant_card.webp') . '" alt="Card League Of Legends"></div>' ;?>
-<?php echo '<div class="cards_img"><img src="' . esc_url('http://localhost/projetS3/wp-content/uploads/2023/11/LoL_Card.webp') . '" alt="Card Valorant"></div>' ;?>
+<?php echo '<div><img src="' . esc_url('http://localhost/projetS3/wp-content/uploads/2023/11/Valorant_card.webp') . '" alt="Card League Of Legends"></div>' ;?>
+<?php echo '<div><img src="' . esc_url('http://localhost/projetS3/wp-content/uploads/2023/11/LoL_Card.webp') . '" alt="Card Valorant"></div>' ;?>
     </div>
 </div>
 </section>
@@ -55,12 +54,13 @@ echo '<div class="img_header"><img src="' . esc_url('http://localhost/projetS3/w
 
 .cards {
     display: flex;
-    max-width: 50%;
-    justify-content: space-between;
+    justify-content: center;
+    text-align: center;
 }
 
-.cards_img {
-    justify-content: space-between;
+.cards img {
+    max-width: 50%;
+    filter: blur(5px bottom);
 }
 
 .stream {
