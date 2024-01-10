@@ -21,27 +21,3 @@
    <?php wp_footer(); ?>
  </body>
 </html>
-
-<style>
-  footer {
-    background-color: #101010;
-    padding-top: 50px;
-  }
-
-.logos {
-  display: flex;
-  justify-content: space-around;
-  margin-left: 50px;
-  margin-right: 50px;
-}
-
-.logo-rs-div {
-  margin: auto;
-}
-
-
-.logo-rs {
-  margin-left: 20px;
-  margin-right: 20px;
-}
-</style>

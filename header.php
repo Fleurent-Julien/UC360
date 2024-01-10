@@ -8,12 +8,9 @@
     <?php wp_head(); ?>
 </head>
 <body>
- <header>
+<header>
 <nav class="header-fixed">
- <a href="/projetS3"><img src="http://localhost/projetS3/wp-content/uploads/2023/10/Logo_White.png" alt="logo unified champions" class="logo-header"></a> 
-    <nav>
-        <?php wp_nav_menu( array ('theme_location' => 'main') ); ?>
-    </nav>
+    <a href="/projetS3"><img src="http://localhost/projetS3/wp-content/uploads/2023/10/Logo_White.png" alt="logo unified champions" class="logo-header"></a>    
+    <?php wp_nav_menu(array('theme_location' => 'main'));?>
 </nav>
-
  </header>

@@ -18,20 +18,44 @@
 /* Add your own styles here */
 
 
+
+
+
+
 /* Générale */
 
-h1, h2 {
+/* Version Mobile */
+
+	/* CSS appliqué aux petits écrans */
+@media (max-width: 1024px) {
+ 
+	hr {
+	 display : none;
+	}
+	
+ 	h1, h2 {
+		font-size : 24px;
+		margin-left : 100px;
+		margin-right: 100px;
+		margin-top: 100px;
+ 	}
+	
+	img {
+		max-width: 50%;
+	}
+}
+
+h1, h2, h3 {
 	font-family: Josefin Sans;
 	color: white;
 	text-align: center;
 	text-transform: uppercase;
-	margin-top:100px;
-	margin-left: 20%;
-	margin-right: 20%;
-	margin-bottom: 100px;
-	font-size: 60px;
+	margin: 200px;
+	text-align: center;
+	font-size: 50px;
 	line-height: 100%;
 }
+
 
 body {
 	background-color: #101010;
@@ -59,19 +83,6 @@ img {
 }
 
 
-/* Home.php */
-
-.img_header {
-	max-width: 100%;
-	max-height: 50%;
-	position: absolute;
-	margin-top: -300px;
-	z-index: -1;
-	filter: brightness(50%);
-	background: linear-gradient(#101010 0%, rgba(16, 16, 16, 0.80) 27.68%, rgba(16, 16, 16, 0.50) 54.98%, rgba(16, 16, 16, 0.10) 80.76%, rgba(16, 16, 16, 0.00) 100%);
-	background: linear-gradient(180deg, #101010 0%, rgba(16, 16, 16, 0.80) 27.68%, rgba(16, 16, 16, 0.50) 54.98%, rgba(16, 16, 16, 0.10) 80.76%, rgba(16, 16, 16, 0.00) 100%);
-}
-
 /* Header.php */
 
 header {
@@ -87,6 +98,29 @@ header {
 	text-align: center;
 }
 
+@media (max-width: 1024px) {
+   /* CSS appliqué aux petits écrans */
+ /*  .menu-header-principal-container ul {
+    display : none;
+   } */
+
+   hr {
+    display : none;
+   }
+   
+    .logo-header {
+        width: 30px;
+        display: flex;
+        margin-left: 30px;
+        margin-top: 100px;
+        margin-bottom: 100px;
+        position: absolute;
+    }
+
+    header {
+        padding: 0;
+    }
+}
 /* Menu header */
 
 .menu-header-principal-container ul {
@@ -126,13 +160,286 @@ footer {
 	filter: drop-shadow(0px 0px 10px #7209B7);
   }
 
-
-
-
 .copyright {
 	color: white;
 	text-align: center;
 }
+
+.logos {
+  display: flex;
+  justify-content: space-around;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.logo-rs-div {
+  margin: auto;
+}
+
+@media (max-width: 1024px) {
+   /* CSS appliqué aux petits écrans */
+   .logos {
+      display: inline;
+      margin: auto;
+   }
+
+   .logo-ufc {
+    margin-bottom: 50px;
+    margin-top: 50px;
+   }
+
+   .logo-rs {
+    margin: 10px;
+   }
+
+   .menu-footer-2-container {
+    display: none;
+   }
+}
+
+.logo-rs {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+/* Home.php */
+
+.img_header {
+	max-width: 100%;
+	height: auto;
+	position: absolute;
+	margin-top: -30%;
+	z-index: -1;
+	filter: brightness(50%);
+	background: linear-gradient(#101010 0%, rgba(16, 16, 16, 0.80) 27.68%, rgba(16, 16, 16, 0.50) 54.98%, rgba(16, 16, 16, 0.10) 80.76%, rgba(16, 16, 16, 0.00) 100%);
+	background: linear-gradient(180deg, #101010 0%, rgba(16, 16, 16, 0.80) 27.68%, rgba(16, 16, 16, 0.50) 54.98%, rgba(16, 16, 16, 0.10) 80.76%, rgba(16, 16, 16, 0.00) 100%);
+}
+
+
+.cards {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.cards img {
+    max-width: 50%;
+    filter: blur(5px bottom);
+}
+
+.stream {
+    text-decoration: underline;
+    color:white;
+    text-align: center;
+    margin-top:-100px;
+    margin-bottom: 100px;
+}
+
+.button-home {
+    display: block;
+    width: 200px;
+    margin-left:auto;
+    margin-right:auto;
+    text-align: center;
+    background: linear-gradient(97deg, #8F00FF 9.79%, #FFF 236.98%);
+    padding: 10px; 
+    margin-bottom: 200px;
+    border-radius: 10px;
+    font-family: Josefin Sans;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.btn-title {
+	margin-bottom: 500px;
+}
+
+.keyboard_text_title_left, .keyboard_text_title_right {
+	font-family: Josefin Sans;
+	color: white;
+	font-size: 60px;
+    margin-right: 70%;
+    text-transform: uppercase;
+    line-height: 100%;
+    font-weight: bold;
+
+}
+
+.keyboard_text {
+    position: relative;
+    color: white;
+}
+
+.keyboard_text_title {
+    position: absolute;
+    top: 55%;
+    left: 14%;
+    filter: drop-shadow(0 0 50px  #4361EE);
+}
+
+.keyboard_text_title p {
+    margin-right: 69%;
+}
+
+.keyboard_text_title_right {
+    position: absolute;
+    top:-10%;
+    left: 60%;
+    filter: drop-shadow(0 0 50px #7209B7);
+}
+
+.keyboard {
+    margin: auto;
+    max-width: 20%;
+    filter: drop-shadow(0 0 300px  #7209B7);
+    z-index: -1;
+}
+
+.keyboard_img {
+    max-width:420px;
+    height: 100%;
+    margin-inline: auto;
+    display: flex;
+    margin-bottom: 400px;
+	margin-top: 300px;
+}
+
+
+
+.line-left, .line-right {
+    border: 5px solid white;
+    color: white;
+	overflow: visible;
+}
+
+.line-left{
+    box-shadow: 0px 0px 2px 0px #4CC9F0 inset;
+	filter: drop-shadow(0px 0px 10px #4CC9F0);
+    align-items: left;
+    margin-right: 50%;
+    border-radius: 0 50px 50px 0;
+}
+
+.line-right{
+    box-shadow: 0px 0px 2px 0px #7209B7 inset;
+	filter: drop-shadow(0px 0px 10px #7209B7);
+    margin-left: 50%;
+    border-radius: 50px 0 0 50px;
+    margin-bottom: 150px;
+}
+
+.img_section {
+	min-width: 100%;
+	position: absolute;
+	margin-bottom: 500px;
+    margin-top: -200px;
+	z-index: -1;
+	filter: brightness(50%);
+	background: linear-gradient(#101010 0%, rgba(16, 16, 16, 0.80) 27.68%, rgba(16, 16, 16, 0.50) 54.98%, rgba(16, 16, 16, 0.10) 80.76%, rgba(16, 16, 16, 0.00) 100%);
+	background: linear-gradient(180deg, #101010 0%, rgba(16, 16, 16, 0.80) 27.68%, rgba(16, 16, 16, 0.50) 54.98%, rgba(16, 16, 16, 0.10) 80.76%, rgba(16, 16, 16, 0.00) 100%);
+}
+
+.img_section_2 {
+	min-width: 100%;
+	position: absolute;
+    margin-top: -100px;
+	z-index: -1;
+	filter: brightness(50%);
+	background: linear-gradient(#101010 0%, rgba(16, 16, 16, 0.80) 27.68%, rgba(16, 16, 16, 0.50) 54.98%, rgba(16, 16, 16, 0.10) 80.76%, rgba(16, 16, 16, 0.00) 100%);
+	background: linear-gradient(180deg, #101010 0%, rgba(16, 16, 16, 0.80) 27.68%, rgba(16, 16, 16, 0.50) 54.98%, rgba(16, 16, 16, 0.10) 80.76%, rgba(16, 16, 16, 0.00) 100%);
+}
+
+
+@media (max-width: 1024px) {
+   /* CSS appliqué aux petits écrans */
+   .img_header {
+   position: absolute;
+   margin-top: -10%;
+   }
+
+   h1 {
+	padding-top: 100px;
+   }
+
+   h2 {
+	padding-top: 50px;
+   }
+
+    h1, h2 {
+		font-size : 24px;
+        margin: 0;
+		margin-left: 20px;
+		margin-right: 20px;
+		
+ 	}
+
+	.stream {
+		font-size: 12px;
+		margin: 0 40px 0 40px ;
+
+	}
+
+	.button-home {
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+    text-align: center;
+    background: linear-gradient(97deg, #8F00FF 9.79%, #FFF 236.98%);
+    padding: 5px; 
+    margin-bottom: 50px;
+    border-radius: 10px;
+    font-family: Josefin Sans;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+    .keyboard_text_title_left, .keyboard_text_title_right {
+	font-family: Josefin Sans;
+	color: white;
+	font-size: 20px!important; 
+    margin-right: 70%!important;
+    text-transform: uppercase;
+    line-height: 100%;
+    font-weight: bold;
+
+}
+
+
+    .keyboard_img {
+        max-width: 30%;
+		margin-top: 40%;
+		margin-bottom: 55%;
+    }
+
+	.keyboard_text_title p {
+    margin-right: 10%;
+	font-size: 12px;
+}
+
+p.keyboard_text_title_left {
+	margin-left: 10%;
+}
+
+.img_section {
+	margin:0;
+}
+
+.img_section_2 {
+	margin:0;
+}
+
+}
+/* Pages des joueurs concernant les détails de la personne */
+
+.sp-list-wrapper {
+	color: white;
+}
+
+
 
 
 /* 404.php */
@@ -226,3 +533,112 @@ text-transform: uppercase;
 			margin-top: 100px;
 		}
 
+/* Page Contact (Disponible sur Wordpress) */
+
+.title_form {
+	font-family: Josefin Sans;
+	color: white;
+	text-align: center;
+	text-transform: uppercase;
+	margin-left: 20px;
+	margin-right: 500px;
+	font-size: 20px;
+	line-height: 100%;
+}
+
+.contact {
+	display : flex;
+	justify-content: space-evenly;
+}
+
+.img-contact {
+	max-width: 30%;
+}
+
+.btn-send {
+    margin-left:auto;
+    margin-right:auto;
+    text-align: center;
+    background: linear-gradient(97deg, #8F00FF 9.79%, #FFF 236.98%);
+    padding: 5px; 
+    margin-bottom: 50px;
+    border-radius: 10px;
+    font-family: Josefin Sans;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+input[type=submit], button, .button {
+  border: none;
+}
+
+.btn-send :hover {
+	color: white!important;;
+}
+
+@media (max-width: 1024px) {
+	.img-contact {
+		display: none;
+	}
+
+	.title_form {
+	margin-left: 20px;
+	margin-right: 0;
+	font-size: 20px;
+	line-height: 100%;
+}
+}
+
+@media (max-width: 1024px) {
+	.img-contact {
+		display: none;
+	}
+
+	.title_form {
+	margin-left: 20px;
+	margin-right: 0;
+	font-size: 20px;
+	line-height: 100%;
+}
+}
+
+
+/* About.php */
+
+    .container-about div > img {
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+
+    .container-about p {
+        color: white;
+    }
+
+    .container-about {
+        display: flex;
+        margin: 50px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    @media (max-width: 1024px) {
+   /* CSS appliqué aux petits écrans */
+   .container-about div > img {
+        padding: 10px;
+        max-width: 70%;
+        align-items: center;
+        display: flex;
+        margin: auto;
+   }
+
+   .container-about {
+    display: inline;
+   }
+
+   .container-about p {
+    margin-left: 50px;
+    margin-right: 50px;
+   }
+    }
